@@ -16,14 +16,14 @@ module.exports = {
     ],
     output: {
         path: resolve(__dirname, 'dist', 'www'),
-        filename: `[chunkhash]-bundle.js`,
+        filename: `bundle.js`,
     },
     plugins: [
         new CleanWebpackPlugin(['dist'], {
             root: __dirname,
         }),
         new CopyWebpackPlugin([{
-            from: resolve(__dirname, 'index.html'),
+            from: resolve(__dirname, 'src', 'main', 'index.html'),
             to: resolve(__dirname, 'dist', 'index.html'),
         }]),
         new UglifyJSPlugin({

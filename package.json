@@ -8,15 +8,15 @@
   "license": "MIT",
   "scripts": {
     "clean": "rm -rf dist browser",
-    "compile": "cross-env BABEL_ENV=production webpack --config webpack.config.dist.js",
+    "compile": "BABEL_ENV=production webpack --config webpack.config.dist.js",
     "flow": "flow",
     "flow:delete": "find ./src/main -name *.flow -delete",
     "flow:generate": "flow-copy-source -v ./src/main ./dist/main",
     "lint": "./node_modules/.bin/eslint src/**/*.js --fix",
-    "mocha": "cross-env BABEL_ENV=test mocha --require ./src/test/index.js \"src/test/unit/**/*.@(js|jsx)\"",
-    "start": "cross-env SITE_DEFAULT=true BABEL_ENV=browser webpack-dev-server --config webpack.config.dev.js",
+    "mocha": "#BABEL_ENV=test mocha --require ./src/test/index.js \"src/test/unit/**/*.@(js|jsx)\"",
+    "start": "SITE_DEFAULT=true BABEL_ENV=browser webpack-dev-server --config webpack.config.dev.js",
     "pretest": "run-p clean lint flow",
-    "test": "cross-env BABEL_ENV=test nyc npm run mocha",
+    "test": "BABEL_ENV=test nyc npm run mocha",
     "posttest": "npm run compile"
   },
   "devDependencies": {
@@ -47,6 +47,7 @@
     "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-flowtype": "^2.46.1",
     "eslint-plugin-import": "^2.10.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
