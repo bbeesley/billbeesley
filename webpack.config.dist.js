@@ -24,7 +24,7 @@ module.exports = {
         }),
         new CopyWebpackPlugin([{
             from: resolve(__dirname, 'src', 'main', 'index.html'),
-            to: resolve(__dirname, 'dist', 'index.html'),
+            to: resolve(__dirname, 'dist', 'www', 'index.html'),
         }]),
         new UglifyJSPlugin({
             uglifyOptions: {
@@ -116,7 +116,10 @@ module.exports = {
             },
             {
                 test: /\.(png|jpg|eot|woff|woff2|ttf)$/,
-                loader: 'file-loader?',
+                loader: 'url-loader?',
+                options: {
+                    limit: 25000,
+                },
             },
             {
                 test: /\.(txt)$/,
