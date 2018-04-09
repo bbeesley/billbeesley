@@ -1,14 +1,12 @@
 // @flow
 import React from 'react';
+import AppBar from 'material-ui/AppBar';
 
 const App = () => (
   <div>
-    <header>
-      <h1>Hello World</h1>
-    </header>
-    <p>
-      This is a work in process, give me a little time...
-    </p>
+    <AppBar
+      title="Bill Beesley"
+    />
   </div>
 );
 
