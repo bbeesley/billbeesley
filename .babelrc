@@ -1,0 +1,40 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": [
+            "Firefox >= 41",
+            "Chrome >= 44",
+            "iOS >= 7",
+            "Safari >= 8",
+            "Explorer >= 11",
+            "Edge >= 14"
+          ]
+        },
+        "useBuiltIns": "usage"
+      }
+    ],
+    "@babel/preset-stage-0",
+    "@babel/preset-flow"
+  ],
+  "plugins": [
+    "@babel/plugin-transform-flow-strip-types",
+    "@babel/plugin-transform-runtime",
+    "@babel/plugin-transform-react-jsx"
+  ],
+  "env": {
+    "test": {
+      "plugins": [
+        "rewire"
+      ]
+    },
+    "development": {
+      "plugins": [
+        "react-hot-loader/babel"
+      ]
+    }
+  },
+  "sourceMaps": true
+}
