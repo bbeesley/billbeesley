@@ -124,7 +124,10 @@ module.exports = {
             },
             {
                 test: /\.(png|jpg|eot|woff|woff2|ttf)$/,
-                loader: 'file-loader?',
+                loader: 'url-loader?',
+                options: {
+                    limit: 25000,
+                },
             },
             {
                 test: /\.(txt)$/,
