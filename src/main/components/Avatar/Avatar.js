@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { withStyles } from 'material-ui/styles';
 import Avatar from 'material-ui/Avatar';
-import me from './Avatar.jpg';
+import me from './Avatar_small.jpg';
 
 const styles = {
   row: {
