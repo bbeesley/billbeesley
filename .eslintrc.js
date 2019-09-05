@@ -73,6 +73,7 @@ module.exports = {
         json: 'always',
       },
     ],
+    'import/no-extraneous-dependencies': 0,
     'valid-jsdoc': 2,
     'new-cap': [
       2,

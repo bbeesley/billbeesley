@@ -13,10 +13,10 @@
             "Edge >= 14"
           ]
         },
+        "corejs": 3,
         "useBuiltIns": "usage"
       }
     ],
-    "@babel/preset-stage-0",
     "@babel/preset-flow"
   ],
   "plugins": [
