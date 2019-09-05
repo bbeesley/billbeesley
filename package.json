@@ -57,7 +57,7 @@
     "fetch-mock": "^6.3.0",
     "file-loader": "^1.1.11",
     "flow-bin": "^0.107.0",
-    "flow-copy-source": "^1.3.0",
+    "flow-copy-source": "^2.0.8",
     "jsdom": "^11.7.0",
     "mocha": "^5.0.5",
     "mocha-sinon": "^2.0.0",
