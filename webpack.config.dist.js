@@ -1,12 +1,12 @@
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const resolve = require('path').resolve;
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { resolve } = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
 const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
-const StatsWriterPlugin = require("webpack-stats-plugin").StatsWriterPlugin;
+const { StatsWriterPlugin } = require('webpack-stats-plugin');
 const prefixwrap = require('postcss-prefixwrap');
 
 module.exports = {
@@ -16,10 +16,10 @@ module.exports = {
     ],
     output: {
         path: resolve(__dirname, 'dist', 'www'),
-        filename: `bundle.js`,
+        filename: 'bundle.js',
     },
     plugins: [
-        new CleanWebpackPlugin(['dist'], {
+        new CleanWebpackPlugin({
             root: __dirname,
         }),
         new CopyWebpackPlugin([{
@@ -32,7 +32,6 @@ module.exports = {
                 mangle: true,
                 ie8: false,
                 compress: {
-                    warnings: true,
                     conditionals: true,
                     unused: true,
                     comparisons: true,
@@ -47,7 +46,7 @@ module.exports = {
                 },
             },
         }),
-        new ExtractTextPlugin('[contenthash]-styles.css'),
+        new MiniCssExtractPlugin({ filename: '[contenthash]-styles.css' }),
         new StatsWriterPlugin({
             filename: 'stats.json',
             // transform: (stats) => JSON.stringify({
@@ -68,23 +67,23 @@ module.exports = {
             },
             {
                 test: /\.*css$/,
-                loader: ExtractTextPlugin.extract({
-                    fallback: 'style-loader',
-                    use: [
-                        { loader: 'css-loader' },
-                        {
-                            loader: "postcss-loader",
-                            options: {
-                                plugins: [
-                                    autoprefixer,
-                                ]
-                            },
+                use: [
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                    },
+                    { loader: 'css-loader' },
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            plugins: [
+                                autoprefixer,
+                            ],
                         },
-                        {
-                            loader: 'sass-loader',
-                        },
-                    ],
-                }),
+                    },
+                    {
+                        loader: 'sass-loader',
+                    },
+                ],
             },
             {
                 test: /\.svg$/,
@@ -109,10 +108,23 @@ module.exports = {
             },
             {
                 test: /\.icons\.(js|json)$/,
-                loader: ExtractTextPlugin.extract({
-                    fallback: 'style-loader',
-                    use: 'css-loader!postcss-loader!sass-loader!webfonts-loader',
-                }),
+                use: [
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                    },
+                    {
+                        loader: 'css-loader',
+                    },
+                    {
+                        loader: 'postcss-loader',
+                    },
+                    {
+                        loader: 'sass-loader',
+                    },
+                    {
+                        loader: 'webfonts-loader',
+                    },
+                ],
             },
             {
                 test: /\.(png|jpg|eot|woff|woff2|ttf)$/,
