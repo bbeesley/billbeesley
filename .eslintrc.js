@@ -108,8 +108,10 @@ module.exports = {
       0,
     ],
     'react/no-array-index-key': [
-      'warning',
+      1,
     ],
+    'react/destructuring-assignment': [1, 'never'],
+    'react/jsx-props-no-spreading': [0],
     'flowtype/no-dupe-keys': 2,
     'flowtype/no-weak-types': [
       1,
