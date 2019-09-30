@@ -55,7 +55,7 @@
     "eslint-plugin-react": "^7.14.3",
     "fetch-mock": "^7.4.0",
     "file-loader": "^4.2.0",
-    "flow-bin": "^0.107.0",
+    "flow-bin": "^0.108.0",
     "flow-copy-source": "^2.0.8",
     "jsdom": "^15.1.1",
     "mini-css-extract-plugin": "^0.8.0",
