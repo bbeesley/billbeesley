@@ -30,7 +30,7 @@
     "@babel/preset-flow": "^7.0.0",
     "@babel/preset-react": "^7.7.0",
     "@babel/preset-stage-0": "^7.0.0",
-    "@babel/register": "^7.6.2",
+    "@babel/register": "^7.7.0",
     "@babel/runtime": "^7.7.2",
     "arrow-mocha": "^1.0.1",
     "autoprefixer": "^9.7.1",
