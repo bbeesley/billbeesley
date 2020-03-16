@@ -73,7 +73,7 @@
     "react-test-renderer": "^16.13.0",
     "redux-immutablejs": "0.0.8",
     "sass-loader": "^8.0.2",
-    "sinon": "^9.0.0",
+    "sinon": "^9.0.1",
     "sinon-chai": "^3.5.0",
     "style-loader": "^1.1.3",
     "svg-sprite-loader": "^4.2.1",
