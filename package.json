@@ -33,7 +33,7 @@
     "@babel/register": "^7.9.0",
     "@babel/runtime": "^7.9.2",
     "arrow-mocha": "^1.0.1",
-    "autoprefixer": "^9.7.4",
+    "autoprefixer": "^9.7.5",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
     "chai": "^4.2.0",
