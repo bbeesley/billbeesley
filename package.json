@@ -68,7 +68,7 @@
     "postcss-loader": "^3.0.0",
     "postcss-prefixwrap": "^1.15.0",
     "raw-loader": "^4.0.1",
-    "react-hot-loader": "^4.12.20",
+    "react-hot-loader": "^4.12.21",
     "react-social-icons": "^4.1.0",
     "react-test-renderer": "^16.13.1",
     "redux-immutablejs": "0.0.8",
