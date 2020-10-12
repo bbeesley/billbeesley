@@ -67,7 +67,7 @@
     "nyc": "^15.1.0",
     "postcss-loader": "^4.0.4",
     "postcss-prefixwrap": "^1.17.0",
-    "raw-loader": "^4.0.1",
+    "raw-loader": "^4.0.2",
     "react-hot-loader": "^4.13.0",
     "react-social-icons": "^4.1.0",
     "react-test-renderer": "^16.13.1",
