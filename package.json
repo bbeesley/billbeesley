@@ -72,7 +72,7 @@
     "react-social-icons": "^4.1.0",
     "react-test-renderer": "^16.13.1",
     "redux-immutablejs": "0.0.8",
-    "sass-loader": "^10.0.3",
+    "sass-loader": "^10.0.4",
     "sinon": "^9.2.0",
     "sinon-chai": "^3.5.0",
     "style-loader": "^2.0.0",
