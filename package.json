@@ -43,7 +43,7 @@
     "concurrently": "^5.3.0",
     "copy-webpack-plugin": "^5.1.1",
     "core-js": "^3.7.0",
-    "css-loader": "^5.0.0",
+    "css-loader": "^5.0.1",
     "empty": "^0.10.1",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.5",
