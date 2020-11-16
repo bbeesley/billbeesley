@@ -35,7 +35,7 @@
     "arrow-mocha": "^1.0.1",
     "autoprefixer": "^10.0.1",
     "babel-eslint": "^10.1.0",
-    "babel-loader": "^8.1.0",
+    "babel-loader": "^8.2.1",
     "chai": "^4.2.0",
     "chai-immutable": "^2.1.0",
     "classnames": "^2.2.6",
