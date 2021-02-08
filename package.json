@@ -31,7 +31,7 @@
     "@babel/preset-react": "^7.12.10",
     "@babel/preset-stage-0": "^7.8.3",
     "@babel/register": "^7.12.10",
-    "@babel/runtime": "^7.12.5",
+    "@babel/runtime": "^7.12.13",
     "arrow-mocha": "^1.0.1",
     "autoprefixer": "^10.2.4",
     "babel-eslint": "^10.1.0",
