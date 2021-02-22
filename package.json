@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.12.17",
-    "@babel/core": "^7.12.16",
+    "@babel/core": "^7.12.17",
     "@babel/plugin-syntax-flow": "^7.12.13",
     "@babel/plugin-transform-flow-strip-types": "^7.12.13",
     "@babel/plugin-transform-react-jsx": "^7.12.17",
