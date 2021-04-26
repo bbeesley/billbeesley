@@ -76,7 +76,7 @@
     "sinon": "^10.0.0",
     "sinon-chai": "^3.6.0",
     "style-loader": "^2.0.0",
-    "svg-sprite-loader": "^6.0.5",
+    "svg-sprite-loader": "^6.0.6",
     "svgo": "^2.3.0",
     "svgo-loader": "^3.0.0",
     "uglifyjs-webpack-plugin": "^2.2.0",
