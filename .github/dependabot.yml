@@ -1,0 +1,26 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: flow-bin
+    versions:
+    - 0.143.1
+    - 0.144.0
+    - 0.145.0
+    - 0.146.0
+    - 0.147.0
+    - 0.148.0
+  - dependency-name: webpack-cli
+    versions:
+    - 4.4.0
+    - 4.5.0
+  - dependency-name: svg-sprite-loader
+    versions:
+    - 6.0.0
+  commit-message:
+    prefix: chore
+    include: scope
