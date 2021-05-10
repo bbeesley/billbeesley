@@ -59,7 +59,7 @@
     "flow-copy-source": "^2.0.9",
     "jsdom": "^16.5.3",
     "mini-css-extract-plugin": "^1.6.0",
-    "mocha": "^8.3.2",
+    "mocha": "^8.4.0",
     "mocha-sinon": "^2.1.2",
     "node-sass": "^5.0.0",
     "nodemon": "^2.0.7",
