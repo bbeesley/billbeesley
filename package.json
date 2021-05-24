@@ -20,7 +20,7 @@
     "posttest": "npm run compile"
   },
   "devDependencies": {
-    "@babel/cli": "^7.13.16",
+    "@babel/cli": "^7.14.3",
     "@babel/core": "^7.14.3",
     "@babel/plugin-syntax-flow": "^7.12.13",
     "@babel/plugin-transform-flow-strip-types": "^7.13.0",
