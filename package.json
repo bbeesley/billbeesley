@@ -57,7 +57,7 @@
     "file-loader": "^6.2.0",
     "flow-bin": "^0.131.0",
     "flow-copy-source": "^2.0.9",
-    "jsdom": "^16.5.3",
+    "jsdom": "^16.6.0",
     "mini-css-extract-plugin": "^1.6.0",
     "mocha": "^8.4.0",
     "mocha-sinon": "^2.1.2",
